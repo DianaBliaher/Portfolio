@@ -7,56 +7,42 @@
     font-family: sans-serif;
 }
 .user_name{
-    position: relative;
     background-color: #ffffff;
-    top: 70px;
-    padding-bottom: 90px;
-    border-radius: 10px;
+    padding-top: 60px;
+    padding: 25px;
 }
 h1{
     text-align: center;
     position: relative;
-    top: 80px;
+    top: 30px;
 }
-.user_pic_img{
+.user_pic{
     position: absolute;
-    right: 80px;
-    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user_pic img{
+    display: block;
 }
 .user{
-    width: 300px;
-    position: relative;
-    margin: auto;
-}
-.user_btn{
-    position: relative;
-    top: 150px;
-    background: #33c1e3;
-    padding: 20px 80px 20px 80px;
-    margin-top: -100px;
-    border-radius: 0 0 10px 10px;
-}
-a{
-    width: 140px;
-    height: 38px;
-    display: block;
-    background: #33c1e3;
-    border: #ffffff solid 1px;
-    border-right-width: 2px;
-    border-left-width: 2px;
-    border-radius: 40px;
-}
-.text{
-    color: #ffffff; 
-    padding: 10px 5px;
-    font-weight: bold;
+    padding-top: 75px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     text-align: center;
-    text-decoration: none;
-    line-height: 5px;
+    width: 300px;
 }
-a:hover .text{
-    background: #ffffff;
-    color: #33c1e3;
-    cursor: pointer;
+.rounded {
+    border-radius: 15px;
+    overflow: hidden;
 }
+.user_site{
+    background: #33c1e3;
+    padding: 20px;
+}
+  
 

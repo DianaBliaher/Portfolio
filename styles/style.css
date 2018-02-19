@@ -1,0 +1,34 @@
+.blue_btn a{
+    padding: 8px 12px;
+    border: 1px solid #f6f6f6;
+    color: #f6f6f6;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 38px;
+    font-family: FiraSans_Bold;
+}
+  
+.blue_btn a:hover {
+    color: #33c1e3;
+    background-color: #f6f6f6;
+}
+.red_btn a{
+    padding: 8px 12px;
+    border: 1px solid #e85f61;
+    color: #e85f61;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 38px;
+    font-family: FiraSans_Bold;
+}
+  
+.red_btn a:hover {
+    color: #f6f6f6;
+    background-color: #e85f61;
+}

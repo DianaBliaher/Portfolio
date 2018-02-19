@@ -3,6 +3,8 @@ html {
 }
 body {
     margin: 0;
+    width: 100%;
+    background: #f6f6f6;
 }
 @font-face {
     font-family: 'FontAwesome';
@@ -10,6 +12,10 @@ body {
 }
 li{
     list-style-type: none;
+}
+.header_items{
+    width: 940px;
+    margin: auto;
 }
 .header {
     min-height: 80px;
@@ -35,7 +41,7 @@ li{
     border-radius: 50%;
     width: 62px;
     height: 62px;
-    margin: 7px 20px 7px 130px;
+    margin: 7px 20px 7px 0px;
   }
 .user_name {
     display: inline-block;
@@ -68,7 +74,7 @@ li{
     background: url("../pic/about/dotted_border-red.png") repeat-x bottom left;
 }
 .contacts:hover .contacts_list {
-    right: -40px;
+    right: 0;
     opacity: 1;
 }
 
@@ -76,9 +82,10 @@ li{
     right: 40px;
     opacity: 1;
 }
-.contacts{
-    margin-right: 130px;
-}
+.contacts_icon {
+    color: #33c1e3;
+    padding-right: 5px;
+  }
 .contacts_list {
     position: absolute;
     border: #dedede solid 1px;
@@ -102,7 +109,7 @@ li{
     margin-top: -28px;
     position: absolute;
 }
-  
+
 .contacts_item {
     text-align: left;
     padding: 8px 4px;
@@ -131,8 +138,8 @@ li{
     transform: translateX(-50%);
     /*  transition: opacity .5s; */
     z-index: 100;
+
 }
-  
 .triangle::before {
     content: "";
     position: absolute;
@@ -146,22 +153,87 @@ li{
     left: -10px;
     /*z-index: 110;*/
 }
+
+.content_items{
+    width: 940px;
+    margin: auto;
+}
 .sidebar {
     float: left;
     width: 220px;
     text-align: right;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .menu {
+.menu {
     margin: 0;
     padding: 0;
-  }
+}
   
-  .menu__list {
+.menu__list {
     padding: 0;
     margin: 0;
     padding-top: 26px;
     list-style: none;
+}
+.menu_list_item{
+    padding: 5px;
+    margin: 0;
+    text-align: right;
+}
+.menu_link{
+    transition: 200ms;
+    padding: 10px;
+    display: block;
+    border-right: 4px solid transparent;
+    text-decoration: none;
+    color: black;
+}
+.menu_link:hover{
+    color: #33c1e3;
+}
+.menu_link:active{
+    font-weight: bold;
+    border-color: #33c1e3;
+}
+.about {
+    width: 720px;
+}
+  
+.about__left {
+    width: 340px;
+    float: left;
+    margin: 0;
+}
+.about__photo{
+    margin: 27px auto 0;
+    width: 224px;
+    height: 224px;
+}
+.about__right{
+    position: relative;
+    width: 380px;
+    float: right;
+    margin: 0;
+    /*left: 150px;
+    bottom: 300px;*/
+}
+.about__text{
+    overflow: scroll; 
+    /*width: 380px; */
+    height: 300px; 
+    padding: 5px; 
+    color: #646464;
+    font-size: 18px;
+    line-height: 26px;
+}
+.about__paragraph {
+    display: block;
+    margin: 0;
+    padding-top: 7px;
+}
+.red_btn{
+    float: right;
+    margin-top: 50px;
 }
