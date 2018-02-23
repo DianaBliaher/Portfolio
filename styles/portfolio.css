@@ -23,7 +23,7 @@
     /*margin: 0%;*/
     background: white;
     border-radius: 10px;
-    /*box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
     min-height: 281px;
     font-size: 1em;
     cursor: pointer;

@@ -19,9 +19,11 @@
 
 html {
     font-family: sans-serif;
-    min-height: 100%;
+    height: 100%;
 }
-
+.main_content{
+    padding-bottom: 50px;
+}
 .content__title {
     display: block;
     font-family: FiraSans_Medium, Arial;
@@ -43,7 +45,7 @@ body {
     margin: 0;
     width: 100%;
     background: #f6f6f6;
-    min-height: 100%;
+    height: 100%;
 }
 @font-face {
     font-family: 'FontAwesome';
@@ -253,7 +255,7 @@ li{
 }
 .wrapper {
     min-height: 100%;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;
     /*min-width: 960px;*/
 }
 
