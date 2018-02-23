@@ -1,0 +1,150 @@
+.career {
+  width: 100%;
+  margin-left: 20px;
+  /*margin-bottom: 50px;*/
+  
+}
+  
+.career__left {
+  width: 220px;
+  float: left;
+  margin: 13px 0 25px 0;
+  margin-top: -5px;
+}
+  
+.career__pic {
+  width: 220px;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  background-image: url("../pic/career/main_pic.png");
+  background-repeat: no-repeat;
+}
+  
+.career__right {
+  width: 460px;
+  float: right;
+  margin-top: -5px;
+}
+  
+.career__list {
+  padding: 0;
+  margin: 0;
+  line-height: 1.42;
+}
+  
+.career__item {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 0;
+}
+  
+.item {
+  top: 0;
+  bottom: 50%;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  width: 380px;
+  min-height: 84px;
+  padding: 15px;
+  vertical-align: top;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  color: #5a5a5a;
+  margin-right: 20px;
+}
+  
+.item__title {
+  font-size: 21px;
+  font-family: FiraSans_Regular, Arial;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+  
+.item__desc {
+  font-size: 18px;
+  font-family: FiraSans_Light, Arial;
+  line-height: 26px;
+}
+  
+.item__year {
+  position: absolute;
+  right: 100%;
+  font-size: 14px;
+  top: 50%;
+  margin-top: -8px;
+  margin-right: 34px;
+  color: #727272;
+  font-size: 14px;
+  font-family: FiraSans_Light, Arial;
+}
+  
+.item__year:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #33c1e3;
+  border: 5px solid #f6f6f6;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  z-index: 1;
+  margin-top: -10px;
+  border-radius: 50%;
+}
+  
+.career__item:hover .item {
+  background: #33c1e3;
+  transition: 200ms;
+}
+  
+.career__item:hover * {
+  color: #fff;
+  transition: 200ms;
+}
+  
+.career__item:hover .item__year:after {
+  border-color: #94e0f2;
+  transition: 200ms;
+}
+  
+.career__item:hover .item__year {
+  color: #33c1e3;
+  font-weight: bold;
+  transition: 200ms;
+}
+  
+.career__item:first-child .item:before {
+  display: none;
+}
+  
+.career__item:last-child .item:after {
+  display: none;
+}
+  
+.item:before {
+  top: 0;
+  bottom: 50%;
+}
+.item:after {
+  top: 50%;
+  bottom: -22px;
+}
+  
+.item:after, .item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  background: #d8d8d8;
+  left: -20px;
+}
