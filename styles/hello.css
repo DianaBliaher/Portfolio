@@ -55,10 +55,13 @@ h1{
     display: inline-block;
     border-radius: 38px;
     font-family: FiraSans_Bold;
+    font-weight: bold;
 }
   
 .blue_btn a:hover {
     color: #33c1e3;
     background-color: #f6f6f6;
+    transition: 200ms;
+    font-weight: bold;
 }  
 

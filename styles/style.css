@@ -112,6 +112,7 @@ li{
 }
 .contacts_link:hover {
     color: #e85f61;
+    transition: 200ms;
     background: url("../pic/about/dotted_border-red.png") repeat-x bottom left;
 }
 /*.contacts:hover .contacts_list {
@@ -122,49 +123,54 @@ li{
 .contacts:hover .triangle {
     right: 40px;
     opacity: 1;
-}
-.contacts_icon {
-    color: #33c1e3;
-    padding-right: 5px;
+}*/
+
+
+
+.contacts {
+    position: relative;
+    display: inline-block;
   }
+
 .contacts_list {
+    padding: 0;
+    margin: 0;
     position: absolute;
+    width: 192px;
+    height: 132px;
+    left: -75px;
+    /*top: 100%;*/
+    display: none;
     border: #dedede solid 1px;
     background-color: white;
     border-radius: 10px;
-    width: 192px;
-    height: 132px;
-    top: 100%;
     cursor: pointer;
-    padding: 10px;
-    top: 25px; 
-    right: -50px;
-    opacity: 0;
-    /*   transition: opacity .5s; */
-    /*z-index: 90;
+    /*padding: 10px;*/
+    top: 35px; 
+    /*right: 150px;*/
+    z-index: 10;
 }
-.contacts_list:before {
-    content: "";
+  
+.contacts.active .contacts_list,.contacts.active .triangle {
     display: block;
-    height: 30px;
-    margin-top: -28px;
-    position: absolute;
-}
-
+} 
+  
 .contacts_item {
     text-align: left;
-    padding: 8px 4px;
+    padding: 8px 4px 8px 12px;
     list-style: none;
     font-family: FiraSans_Light, Arial;
     font-size: 18px;
     color: #414141;
     line-height: 28px;
 }
-.contacts__icon {
+.contacts_icon {
     color: #33c1e3;
     padding-right: 5px;
 }
+
 .triangle {
+    display: none;
     position: absolute;
     width: 0px;
     height: 0px;
@@ -172,14 +178,10 @@ li{
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #dedede;
-    right: -9999px;
-    opacity: 0;
-    /* right: 50px; */
-    /*top: 32px;
+    top: 25px;
+    right: 50%;
     transform: translateX(-50%);
-    /*  transition: opacity .5s; */
-    /*z-index: 100;
-
+    z-index: 100;
 }
 .triangle::before {
     content: "";
@@ -192,8 +194,7 @@ li{
     border-bottom: 10px solid white;
     top: 1px;
     left: -10px;
-    /*z-index: 110;*/
-/*}*/
+}
 
 .content_items{
     width: 940px;
@@ -327,6 +328,7 @@ li{
   
 .link__fb:hover {
     background-image: url("../pic/about/FaceBook-col.png");
+    transition: 200ms;
 }
   
 .link__vk {
@@ -337,6 +339,7 @@ li{
   
 .link__vk:hover {
     background-image: url("../pic/about/vk-col.png");
+    transition: 200ms;
 }
   
 .link__tw {
@@ -347,6 +350,7 @@ li{
   
 .link__tw:hover {
     background-image: url("../pic/about/Twitter-col.png");
+    transition: 200ms;
 }
 .header_items, .content_items, .about, .container, .career, .portfolio, .footer:after{
     content: "";
